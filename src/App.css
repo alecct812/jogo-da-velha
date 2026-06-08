@@ -1,0 +1,83 @@
+.app {
+  max-width: 380px;
+  margin: 24px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  margin-top: 0;
+  color: #666;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 24px;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 0 auto 20px;
+}
+
+.celula {
+  aspect-ratio: 1 / 1;
+  font-size: 56px;
+  font-weight: bold;
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 8px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.celula:hover:not(:disabled) {
+  background: #eef4ff;
+  border-color: #4a90e2;
+}
+
+.celula:disabled {
+  cursor: default;
+}
+
+.celula.x {
+  color: #d63227;
+}
+
+.celula.o {
+  color: #1f7a1f;
+}
+
+.painel {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.painel button {
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #999;
+  background: #fff;
+}
+
+.painel button:hover {
+  background: #f0f0f0;
+}
+
+.placar {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-weight: bold;
+}
